@@ -1,0 +1,9 @@
+According to Average Cost by Brand chart, we can conclude that Motorola phones are the cheapest on Unimart.com, meanwhile the Apple ones
+are the most expensive. 6 iPhones are located in the top 10 most expensive phones on the website. Are all iPhones located inside this price range?
+Once again, the answer is no, according to price_distribution_by_brand chart, the data clearly shows that Samsung has also a lot of expensive phones,
+but in this case, a huge leap can be identified, between GalaxyA16 and GalaxyS24FE, that creates a clear gap between low range and high range models, 
+the same can be thought if you take a look to Honor phones, more specifically X7c and Magic 7 Lite NFC models.
+Another fun fact is that both most expensive brands (Samsung and Apple) most expensive phone has a similar price.
+
+The funniest fact that I managed to find on this short analysis is that 256GB is a bit cheaper than 128GB on average, so a phone with 128GB of memory 
+should not even be considerate an alternative on that price range.
