@@ -53,7 +53,7 @@ To support data-driven decisions by building an automated data pipeline that ena
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/data-science-lab.git
+   git clone https: https://github.com/SteamyCupGames/data-science-lab.git
    cd data-science-lab
    ```
 2. Install dependencies:
