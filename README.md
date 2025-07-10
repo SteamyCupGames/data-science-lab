@@ -86,10 +86,10 @@ To support data-driven decisions by building an automated data pipeline that ena
 ## 📊 Visualizations
 The project includes visualizations such as:
 
-📈 Average Cost by Brand
-💸 Top 10 Most Expensive Phones
-📊 Price Distribution by Brand
-🧠 Price vs Memory Analysis
+- 📈 Average Cost by Brand
+- 💸 Top 10 Most Expensive Phones
+- 📊 Price Distribution by Brand
+- 🧠 Price vs Memory Analysis
 
 All charts are saved automatically and can be uploaded to MongoDB.
 
