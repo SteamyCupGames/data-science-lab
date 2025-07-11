@@ -1,10 +1,9 @@
 # 🧪 Big Data Pipeline: Web Scraping, Cleansing and Storing in MongoDB
 
-This repository implements a complete data pipeline to extract information from an online marketplace, clean and store it in MongoDB, and explore it through visualizations. It demonstrates real-world data engineering and data science practices using Python.
+This project implements a complete data science pipeline that extracts product data from an online marketplace (Unimart Costa Rica), cleans and processes it, stores it in MongoDB, and generates insightful analyses and visualizations for data-driven decision making.
 
-## 📋 Project Description
-
-The project scrapes product data from Unimart (Costa Rica), processes and stores it, and visualizes key business insights. It includes Jupyter notebooks and modular scripts for reproducibility and scalability.
+## 🚀 Project Objective
+Demonstrate technical skills and best practices in real-world data extraction, storage, and analysis by building a modular, reproducible solution that can support business intelligence and market analysis workflows.
 
 ## 🎯 Business Objective
 
@@ -12,13 +11,13 @@ To support data-driven decisions by building an automated data pipeline that ena
 
 ## 🛠 Technologies and Tools Used
 
-- 🐍 Python 3.x  
-- 🌐 Requests, BeautifulSoup – Web scraping  
-- 🐼 Pandas – Data wrangling  
-- 🍃 MongoDB – Data storage  
-- 📓 Jupyter Notebooks – Analysis and storytelling  
-- 📊 Matplotlib – Visualizations  
-- 🐳 Docker – Reproducible environment  
+- 🐍 Language: Python 3.x 
+- 🌐 Web Scraping: Requests, BeautifulSoup
+- 🐼 Data Processing: Pandas
+- 🍃 Storage: MongoDB (Atlas or local) 
+- 📓 Environment: Jupyter Notebooks for exploratory analysis and storytelling 
+- 📊 Visualization: Matplotlib 
+- 🐳 Containerization: Docker for reproducible environments
 
 ## 📂 Project Structure
 
@@ -41,47 +40,39 @@ To support data-driven decisions by building an automated data pipeline that ena
  ┗ plot_creatoy.py         # Generates visualizations
  ┗ clean_data.py           # Cleaning and preprocessing
  ┗ mongobd_connection.py   # Uploads data/images to MongoDB
+📜 Dockerfile
+📜 docker-compose.yml
+📜 requirements.txt
 📜 README.md
 ```
 
 ## Installation
 ### Prerequisites
-- Python 3.8+
-- MongoDB (local or cloud)
-- (Optional) Docker
+- Python 3.8 or higher
+- MongoDB Atlas account or local MongoDB installation
+- (Optional) Docker for containerized execution
 
-### Setup
-1. Clone the repository:
+### Steps to run
+
+1. Clone the repository and navigate into it:
    ```bash
    git clone https: https://github.com/SteamyCupGames/data-science-lab.git
    cd data-science-lab
    ```
-2. Install dependencies:
+2. Install required Python packages:
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up your MongoDB connection in `upload_to_mongo.py` by replacing `<your_connection_string>` with your actual connection string.
+3. Configure your MongoDB connection string inside Source/mongodb_connection.py:
    ```bash
    client = pymongo.MongoClient("<your_connection_string>")
    ```
+4. Run the full data pipeline with:
+```bash
+   python run_pipeline.py
+   ```
 
-## Usage
-1. **Run the web scraping script**:
-   ```bash
-   python scraping/scrape_data.py
-   ```
-2. **Clean the data**:
-   ```bash
-   python data_processing/clean_data.py
-   ```
-3. **Generate visualizations**:
-   ```bash
-   python visualizations/generate_charts.py
-   ```
-4. **Upload to MongoDB**:
-   ```bash
-   python mongodb/upload_to_mongo.py
-   ```
+This script will scrape data, clean it, upload it to MongoDB, and generate visualizations automatically.
 
 ## 📊 Visualizations
 The project includes visualizations such as:
@@ -91,7 +82,11 @@ The project includes visualizations such as:
 📊 Price Distribution by Brand
 🧠 Price vs Memory Analysis
 
-All charts are saved automatically and can be uploaded to MongoDB.
+All generated charts are saved under Data Analysis/Charts and also uploaded to MongoDB for easy access.
 
 ## 📄 License
 This project is open-source and available under the MIT License.
+
+Contact
+Néstor Piedra — [[LinkedIn](https://www.linkedin.com/in/nestor-piedra-319b48178/) / [GitHub](https://github.com/SteamyCupGames)]
+

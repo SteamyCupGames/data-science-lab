@@ -73,13 +73,27 @@ def main(url, product_class, name_class, price_class, offer_price_class, bold_pr
     product_data = extract_product_data(soup, product_class, name_class, price_class, offer_price_class, bold_price_class, brand_class)
     save_raw_data(product_data, output_file)
 
-if __name__ == '__main__':
-    url = 'https://www.unimart.com/collections/celulares'  # URL website
-    product_class = 'product-item' # Product class
-    name_class = 'font-normal text-body leading-5 mb-1 order-4' # Name Class
-    price_class = 'money line-through text-unimart-gray-200 text-xs'  # Regular Price 
-    offer_price_class = 'money text-base font-semibold mr-2 text-accent-red'  # Offer Price
-    bold_price_class = 'money text-black text-base font-semibold'  # Bold Price (No Offer)
-    brand_class = 'font-normal text-[10px] uppercase text-unimart-gray-200 mb-1 order-3' # Brand Class
+def scrape_unimart():
+    url = 'https://www.unimart.com/collections/celulares'
+    product_class = 'product-item'
+    name_class = 'font-normal text-body leading-5 mb-1 order-4'
+    price_class = 'money line-through text-unimart-gray-200 text-xs'
+    offer_price_class = 'money text-base font-semibold mr-2 text-accent-red'
+    bold_price_class = 'money text-black text-base font-semibold'
+    brand_class = 'font-normal text-[10px] uppercase text-unimart-gray-200 mb-1 order-3'
 
-    main(url, product_class, name_class, price_class, offer_price_class, bold_price_class, brand_class, 'UnimartCellphoneData.csv')
+    html_content = get_html(url)
+    if html_content is None:
+        return []
+
+    soup = BeautifulSoup(html_content, 'html.parser')
+    return extract_product_data(
+        soup,
+        product_class,
+        name_class,
+        price_class,
+        offer_price_class,
+        bold_price_class,
+        brand_class
+    )
+

@@ -20,7 +20,3 @@ def clean_dataset(input_file='data/raw/UnimartCellphoneData.csv', output_file='d
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     df.to_csv(output_file, index=False)
     print(f"Clean Dataset stored: {output_file}")
-
-if __name__ == "__main__":
-    clean_dataset()
-    

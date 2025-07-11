@@ -73,8 +73,8 @@ def plot_avg_price_per_memory(input_file='data/clean/UnimartCellphoneData.csv', 
     plt.close()
     print(f'Plot saved inside folder:  {output_file}')
 
-if __name__ == "__main__":
-    plot_avg_price_per_brand()
-    plot_top_10_most_expensive_phones()
-    plot_price_distribution_per_brand()
-    plot_avg_price_per_memory()
+def analyze_data(df):
+    plot_avg_price_per_brand(df)
+    plot_top_10_most_expensive_phones(df)
+    plot_price_distribution_per_brand(df)
+    plot_avg_price_per_memory(df)
