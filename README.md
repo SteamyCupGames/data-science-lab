@@ -77,10 +77,10 @@ This script will scrape data, clean it, upload it to MongoDB, and generate visua
 ## 📊 Visualizations
 The project includes visualizations such as:
 
-📈 Average Cost by Brand
-💸 Top 10 Most Expensive Phones
-📊 Price Distribution by Brand
-🧠 Price vs Memory Analysis
+- 📈 Average Cost by Brand
+- 💸 Top 10 Most Expensive Phones
+- 📊 Price Distribution by Brand
+- 🧠 Price vs Memory Analysis
 
 All generated charts are saved under Data Analysis/Charts and also uploaded to MongoDB for easy access.
 
